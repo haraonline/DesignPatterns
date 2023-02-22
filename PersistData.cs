@@ -12,7 +12,7 @@ namespace DesignPatterns
     {       
         public static void WriteToFile(string fileName, List<string> list)
         {
-            StreamWriter writer = new StreamWriter(fileName);
+            StreamWriter writer = new StreamWriter(fileName, true);
             foreach (var item in list)
             {
                 writer.WriteLine(item);

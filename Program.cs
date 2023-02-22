@@ -29,9 +29,15 @@ namespace DesignPatterns
             lst.AddItem("Eggs");
             lst.AddItem("Cheese");
             lst.AddItem("Butter");
+            lst.AddItem("Chicken");
+            lst.AddItem("Beef");
+            lst.AddItem("Pork");
+            lst.AddItem("Fish");
+            lst.AddItem("Rice");
 
-            PersistData.WriteToFile("ShoppingList.txt", lst.LebensmittelListe);
-            Console.WriteLine(lst);           
+            PersistData.WriteToFile(@"C:\\Users\\harag\\OneDrive\\Desktop\shopping.txt", lst.LebensmittelListe);
+            Console.WriteLine(lst);
+            Console.ReadKey();
         }
     }
 }
