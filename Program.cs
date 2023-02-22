@@ -24,9 +24,14 @@ namespace DesignPatterns
             lst.AddItem("Apple");
             lst.AddItem("Banana");
             lst.AddItem("Oranges");
+            lst.AddItem("Milk");
+            lst.AddItem("Bread");
+            lst.AddItem("Eggs");
+            lst.AddItem("Cheese");
+            lst.AddItem("Butter");
 
+            PersistData.WriteToFile("ShoppingList.txt", lst.LebensmittelListe);
             Console.WriteLine(lst);           
-
         }
     }
 }

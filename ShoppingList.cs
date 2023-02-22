@@ -15,16 +15,17 @@ namespace DesignPatterns
         public List<string> LebensmittelListe { get; set; } = new List<string>();
 
         //methods
+        //add item to the shopping list
         public void AddItem(string item)
         {
             LebensmittelListe.Add((count++) + " : " + item);
             
         }
-
+        //remove item from the shopping list
         public void RemoveItem(string item)
         {
             LebensmittelListe.Remove((count--) + " : " + item);            
-        }
+        }       
 
         public override string ToString()
         {
