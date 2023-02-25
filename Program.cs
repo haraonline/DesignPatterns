@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design;
 using System.Reflection.Emit;
+using DesignPatterns._02_OpenClosed;
 using DesignPatterns.SingleResponsibility;
 
 namespace DesignPatterns
@@ -17,8 +18,8 @@ namespace DesignPatterns
             ///This means that each class should have a single, clear responsibility that it performs well.
             ///
             ///O - Open/Closed Principle: A software module should be open for extension but closed for modification.
-            ///This means that existing code should be protected from changes but should be able to be extended
-            ///to add new functionality.
+            ///This means that existing code should be protected from changes but should be able to be extended to add new functionality.
+            ///This can be achieved using abstract classes or interfaces.
             ///
             ///L - Liskov Substitution Principle: A subclass should be able to be used in place of its parent class 
             ///without any problems.This means that derived classes should be able to be substituted for their
@@ -36,25 +37,30 @@ namespace DesignPatterns
             /// flexible, maintainable, and easy to understand, which can help reduce bugs and make development more efficient.
             /// </summary>/// 
 
+            //Single Responbility: create a class instance and call the method AddItem to add items to a list
+            //ShoppingList lst = new ShoppingList();
+            //lst.AddItem("Apple");
+            //lst.AddItem("Banana");
+            //lst.AddItem("Oranges");
+            //lst.AddItem("Milk");          
 
-            ShoppingList lst = new ShoppingList();
-            lst.AddItem("Apple");
-            lst.AddItem("Banana");
-            lst.AddItem("Oranges");
-            lst.AddItem("Milk");
-            lst.AddItem("Bread");
-            lst.AddItem("Eggs");
-            lst.AddItem("Cheese");
-            lst.AddItem("Butter");
-            lst.AddItem("Chicken");
-            lst.AddItem("Beef");
-            lst.AddItem("Pork");
-            lst.AddItem("Fish");
-            lst.AddItem("Rice");
+            //PersistData.WriteToFile(@"C:\\Users\\harag\\OneDrive\\Desktop\shopping.txt", lst.LebensmittelListe);
+            //Console.WriteLine(lst);
+            //Console.ReadKey();
 
-            PersistData.WriteToFile(@"C:\\Users\\harag\\OneDrive\\Desktop\shopping.txt", lst.LebensmittelListe);
-            Console.WriteLine(lst);
-            Console.ReadKey();
+
+            //Open-Closed: Use of an abstract class
+            Cat cat = new Cat();
+            cat.Name = "Mittens";
+
+            Dog dog = new Dog();
+            dog.Name = "Fido";
+
+            cat.MakeSound();
+            cat.Eat();
+
+            dog.MakeSound();
+            dog.Eat();
         }
     }
 }
