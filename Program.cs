@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design;
 using System.Reflection.Emit;
+using DesignPatterns.SingleResponsibility;
 
 namespace DesignPatterns
 {

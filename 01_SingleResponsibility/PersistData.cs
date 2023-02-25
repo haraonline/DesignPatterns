@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace DesignPatterns
+namespace DesignPatterns.SingleResponsibility
 {
     //PersistData class
     internal class PersistData
-    {       
+    {
         public static void WriteToFile(string fileName, List<string> list)
         {
             StreamWriter writer = new StreamWriter(fileName, true);
@@ -18,6 +18,6 @@ namespace DesignPatterns
                 writer.WriteLine(item);
             }
             writer.Close();
-        }        
+        }
     }
 }

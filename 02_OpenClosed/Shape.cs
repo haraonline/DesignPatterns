@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns
+namespace OpenClosedPrinciple
 {
-    internal class OpenClosePrinciple
+    public abstract class Shape
     {
+        //methods
+        public abstract double Area();
     }
 }

@@ -5,8 +5,6 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns.csproj", "{2D5A5D29-6E73-4590-A8BE-D89C6486A514}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple", "..\OpenClosedPrinciple\OpenClosedPrinciple.csproj", "{D093158A-8078-4386-9363-B00B8D4902EC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{2D5A5D29-6E73-4590-A8BE-D89C6486A514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5A5D29-6E73-4590-A8BE-D89C6486A514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5A5D29-6E73-4590-A8BE-D89C6486A514}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D093158A-8078-4386-9363-B00B8D4902EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D093158A-8078-4386-9363-B00B8D4902EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D093158A-8078-4386-9363-B00B8D4902EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D093158A-8078-4386-9363-B00B8D4902EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
