@@ -1,0 +1,4 @@
+﻿Interface Segregation Principle
+-------------------------------
+No client should be forced to depend on methods it does not use.
+Clients should not be forced to implement an interface that they don’t use or clients should not be forced to depend on methods they do not use.
